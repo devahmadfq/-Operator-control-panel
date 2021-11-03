@@ -7,6 +7,10 @@ class LoginContoller
     public function Login()
     {
         $Operator = new Operator();
+        if (empty($_GET['email']) || empty($_GET['password'])){
+            echo 0;
+            exit;
+        }
         $permission = $Operator->login($_GET['email'], $_GET['password']);
         switch ($permission) {
             //no such user
@@ -36,6 +40,7 @@ class LoginContoller
     {
 
     }
+    
 }
 
 $login = new LoginContoller();
