@@ -1,6 +1,6 @@
 <?php
 $dbhost = 'localhost';
-$dbuser = 'root';
-$dbpass = "";
-$dbname = 'Operatordb';
+$dbuser = 'group_5';
+$dbpass = "group_5";
+$dbname = 'final_year_project';
 ?>
