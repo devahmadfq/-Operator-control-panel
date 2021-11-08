@@ -1,6 +1,6 @@
 <?php
 require_once('user.php');
-class Admin
+class Operator
 {
     public function login($email, $password)
     {   //create connection to database
@@ -29,6 +29,7 @@ class Admin
     }
     public function forgetPassword($email)
     {
+
     }
 
 }

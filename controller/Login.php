@@ -1,9 +1,10 @@
 <?php
 
 session_start();
-require_once('../model/Operator.php');
-class LoginContoller
+require_once('../controller/BaseController.php');
+class LoginContoller extends BaseController
 {
+
     public function Login()
     {
         $Operator = new Operator();
